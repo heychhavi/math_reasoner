@@ -159,7 +159,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributors
 
 - Abhinav Agarwal
-- [Your Team Members]
+- Carlo Baronio
+- Shubhra Mishra
+- Shree Reddy
+- Chhavi Sharma
 
 ## Acknowledgments
 
