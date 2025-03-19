@@ -139,19 +139,6 @@ AI-Math-Reasoning/
 └── tests/                  # Unit tests
 ```
 
-## Citation
-
-If you use this codebase in your research, please cite our paper:
-
-```
-@article{agarwal2025aimathreasoningenhancing,
-  title={Enhancing Mathematical Reasoning in Large Language Models through Group Relative Policy Optimization},
-  author={Agarwal, Abhinav and Your-Co-Authors},
-  journal={Stanford CS329A Final Project},
-  year={2025}
-}
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
