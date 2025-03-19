@@ -1,0 +1,60 @@
+{
+  "training": {
+    "batch_size": 8,
+    "num_epochs": 3,
+    "gradient_accumulation_steps": 4,
+    "learning_rate": 1e-5,
+    "weight_decay": 0.01,
+    "margin": 0.5,
+    "beta": 0.01,
+    "max_grad_norm": 1.0,
+    "log_interval": 10,
+    "eval_interval": 50,
+    "save_interval": 200,
+    "seed": 42
+  },
+  "model": {
+    "model_type": "deepseek",
+    "model_name_or_path": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+    "max_length": 2048,
+    "precision": "bf16",
+    "use_flash_attention": true,
+    "use_lora": true,
+    "lora_config": {
+      "r": 16,
+      "lora_alpha": 32,
+      "lora_dropout": 0.05,
+      "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj"],
+      "bias": "none"
+    }
+  },
+  "dataset": {
+    "train_dataset_path": "data/prm/train_pairs.json",
+    "eval_dataset_path": "data/prm/eval_pairs.json",
+    "problem_prefix": "Problem: ",
+    "solution_prefix": "Solution: ",
+    "max_samples": 50000,
+    "validation_split": 0.1
+  },
+  "output": {
+    "output_dir": "models/prm-deepseek",
+    "logging_dir": "logs/prm",
+    "use_wandb": false,
+    "wandb_project": "ai-math-reasoning",
+    "wandb_run_name": "prm-run"
+  },
+  "distributed": {
+    "use_deepspeed": false,
+    "deepspeed_config": "configs/deepspeed/ds_config_zero2.json",
+    "use_accelerate": false,
+    "gradient_checkpoint": true,
+    "ddp_find_unused_parameters": false
+  },
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "max_new_tokens": 1024,
+    "num_return_sequences": 1,
+    "do_sample": true
+  }
+}

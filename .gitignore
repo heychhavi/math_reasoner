@@ -1,0 +1,101 @@
+# Python-specific files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# Distribution / packaging
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Documentation
+/site
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Project-specific
+models/
+checkpoints/
+logs/
+*.log
+runs/
+wandb/
+outputs/
+*.pt
+*.pth
+*.bin
+*.onnx
+
+# Configuration - keep defaults but ignore others
+config/local/
+configs/local/
+**/config/local/
+**/configs/local/
+*.local.json
+*.local.yaml
+*.local.yml
+
+# HuggingFace datasets
+data/cache/
+data/downloads/
+datasets/cache/
+datasets/downloads/
+
+# Large data files
+*.arrow
+*.parquet
+*.csv
+*.json.gz
+*.jsonl.gz
+*.tar.gz
+*.zip
+*.pkl
+*.pickle
