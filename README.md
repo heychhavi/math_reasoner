@@ -142,15 +142,3 @@ AI-Math-Reasoning/
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contributors
-
-- Abhinav Agarwal
-- Carlo Baronio
-- Shubhra Mishra
-- Shree Reddy
-- Chhavi Sharma
-
-## Acknowledgments
-
-We would like to thank the Stanford CS329A teaching staff for their guidance and support throughout this project.
